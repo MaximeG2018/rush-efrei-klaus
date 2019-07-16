@@ -23,7 +23,7 @@ export default class ConveyorBelt extends Furniture {
 
     let newGift
     let nb = this.getRandomInt(3)
-
+    console.log(nb)
     switch(nb) {
       case 0 :
          newGift = new DragonBall()

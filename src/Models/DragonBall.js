@@ -1,4 +1,5 @@
 import Figurine from './Figurine';
+import { DBHeroes } from '../Constants/DBHeroes'
 
 export default class DragonBall extends Figurine {
 
@@ -6,7 +7,13 @@ export default class DragonBall extends Figurine {
 
   constructor(character) {
     super()
+
+    if (this.#_character == null) {
+      this.#_character =  this.randomCharacter()
+    } else {
     this.#_character = character
+    }
+
     this.type = `Dragon Ball figurine ${this.#_character}`
     this.init()
   }
@@ -20,19 +27,19 @@ CHA-LA HEAD CHA-LA
 Mune ga pachi-pachi suru hodo
 Sawagu Genki-Dama --Sparking !
   `)
-  }
+}
 
   isMoved() {
     super.isMoved()
   }
 
-  // randomCharacter() {
-  //     let nb = getRandomInt(3)
-  //     if (nb == 0) { return this.#_character = DBHeroes.Kakarot }
-  //     if (nb == 1) { return this.#_character = DBHeroes.bejita }
-  //     if (nb == 2) { return this.#_character = DBHeroes.beerus }
-  //     return this.#_character = DBHeroes.kamesennin }
-  // }
+  randomCharacter() {
+      let nb = this.getRandomInt(3)
+      if (nb == 0) { return this.#_character = DBHeroes.Kakarot }
+      if (nb == 1) { return this.#_character = DBHeroes.bejita }
+      if (nb == 2) { return this.#_character = DBHeroes.beerus }
+      return this.#_character = DBHeroes.kamesennin
+  }
 
   getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
