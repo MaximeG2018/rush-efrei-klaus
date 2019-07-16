@@ -21,7 +21,7 @@ Dou-double poney, j’fais izi money
 D’où tu m’connais ? Parle moi en billets violets
 Dou-double poney, j’fais izi money`)
     }
-    
+
   isMoved() {
     super.isMoved()
   }

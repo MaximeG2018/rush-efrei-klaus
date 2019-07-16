@@ -1,2 +1,2 @@
 # rush-efrei-klaus
-Projet programmation pragmatique 
+Projet programmation pragmatique
