@@ -1,3 +1,6 @@
+# rush-efrei-klaus
+Projet programmation pragmatique
+
 
 <p align="center">
   <img src="./assets/efrei-klaus-logo.png"/>
