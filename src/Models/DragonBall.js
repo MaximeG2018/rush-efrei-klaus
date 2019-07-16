@@ -25,4 +25,17 @@ Sawagu Genki-Dama --Sparking !
   isMoved() {
     super.isMoved()
   }
+
+  // randomCharacter() {
+  //     let nb = getRandomInt(3)
+  //     if (nb == 0) { return this.#_character = DBHeroes.Kakarot }
+  //     if (nb == 1) { return this.#_character = DBHeroes.bejita }
+  //     if (nb == 2) { return this.#_character = DBHeroes.beerus }
+  //     return this.#_character = DBHeroes.kamesennin }
+  // }
+
+  getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+
 }

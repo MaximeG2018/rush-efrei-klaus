@@ -13,8 +13,9 @@ export default class Toy {
        console.log('Kamé Hamé Ha!');
     }
    else {
-     console.log(" ???? ")
+     console.log(" Surprise !!! ")
    }
+
   }
 
   getType() {

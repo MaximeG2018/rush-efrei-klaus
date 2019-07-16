@@ -4,10 +4,12 @@ import DragonBall from './Models/DragonBall'
 import Elf from './Models/Elf'
 import Box from './Models/Box'
 import GiftWrap from './Models/GiftWrap'
+import Table from './Models/Table'
+import ConveyorBelt from './Models/ConveyorBelt'
+import Furniture from './Models/furniture'
 
 // Step #1
 console.log("--- STEP #1 ---")
-
 
 var pony = new Pony()
 var kakarot = new DragonBall(DBHeroes.Kakarot)
@@ -33,3 +35,27 @@ var toy = majdi.unpack(paper)
 console.log(toy instanceof Pony)
 var r = majdi.unpack(paper)
 console.log(r == null)
+
+// Step #3
+console.log("--- STEP #3 ---")
+
+var table = new Table()
+var conveyor = new ConveyorBelt()
+
+majdi.put(table, paper)
+majdi.put(table, pony)
+majdi.put(table, box)
+majdi.put(table, paper)
+majdi.put(table, pony)
+
+majdi.put(table, box)
+majdi.put(table, paper)
+majdi.put(table, pony)
+majdi.put(table, box)
+majdi.put(table, paper)
+
+majdi.put(table, paper) // 11eme cadeau
+
+majdi.look(table)
+
+conveyor.in()

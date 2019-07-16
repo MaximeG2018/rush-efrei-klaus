@@ -1,6 +1,8 @@
 import GiftWrap from './GiftWrap'
 import Box from './Box'
 
+import ConveyorBelt from './ConveyorBelt'
+
 export default class Elf {
 
   constructor(nickname) {
@@ -39,14 +41,19 @@ export default class Elf {
       return toy
     }
   }
+
+  put(furniture, object) {
+    if (furniture.isBusy == true && furniture instanceof ConveyorBelt) {
+      console.log('0 place')
+      return
+    } else {
+      furniture.put(object)
+    }
+
+  }
+
+  look(tab) {
+    console.log(tab)
+  }
+
 }
-
-
-// Sorry this package is not open
-// Yeaaaah! Just packing the toy ~~ Dragon Ball figurine SANGOKU ~~
-// Yeaaaah! Just packing the toy ~~ Pony #1 ~~
-// Sorry this package already filled
-// Ooooooh! Just unpacking the toy ~~ Pony #1 ~~
-// true
-// Sorry this package is already empty
-// true

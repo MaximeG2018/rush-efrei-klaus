@@ -1,5 +1,5 @@
 export const DBHeroes = {
-  Kakarot: "Kakarot",
+  Kakarot: "KAKAROT",
   bejita: "BEJITA",
   beerus: "BEERUS",
   kamesennin: "KAMESENNIN"
