@@ -21,7 +21,7 @@ export default class Table extends Furniture {
     if (this.content.length < 10) {
       this.content.push(item)
     }else {
-      console.log('sorry 0 place')
+      console.log('No place')
     }
   }
 

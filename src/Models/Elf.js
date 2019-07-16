@@ -44,12 +44,11 @@ export default class Elf {
 
   put(furniture, object) {
     if (furniture.isBusy == true && furniture instanceof ConveyorBelt) {
-      console.log('0 place')
+      console.log('Is Busy')
       return
     } else {
       furniture.put(object)
     }
-
   }
 
   look(tab) {

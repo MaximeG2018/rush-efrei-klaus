@@ -8,7 +8,6 @@ import Table from './Models/Table'
 import ConveyorBelt from './Models/ConveyorBelt'
 import Furniture from './Models/Furniture'
 
-
 console.log('\n')
 
 // Step #1
@@ -25,20 +24,20 @@ console.log('\n')
 // Step #2
 console.log("--- STEP #2 ---")
 
-var majdi = new Elf('makiboto')
+var elrond = new Elf('makiboto')
 var box = new Box()
 var paper = new GiftWrap()
 
-majdi.pack(box, kakarot)
+elrond.pack(box, kakarot)
 box.open()
-majdi.pack(box, kakarot)
+elrond.pack(box, kakarot)
 
-majdi.pack(paper, pony)
-majdi.pack(paper, pony)
+elrond.pack(paper, pony)
+elrond.pack(paper, pony)
 
-var toy = majdi.unpack(paper)
+var toy = elrond.unpack(paper)
 console.log(toy instanceof Pony)
-var r = majdi.unpack(paper)
+var r = elrond.unpack(paper)
 console.log(r == null)
 console.log('\n')
 
@@ -49,22 +48,23 @@ console.log("--- STEP #3 ---")
 var table = new Table()
 var conveyor = new ConveyorBelt()
 
-majdi.put(table, paper)
-majdi.put(table, pony)
-majdi.put(table, box)
-majdi.put(table, paper)
-majdi.put(table, pony)
+elrond.put(table, paper)
+elrond.put(table, pony)
+elrond.put(table, box)
+elrond.put(table, paper)
+elrond.put(table, pony)
 
-majdi.put(table, box)
-majdi.put(table, paper)
-majdi.put(table, pony)
-majdi.put(table, box)
-majdi.put(table, paper)
+elrond.put(table, box)
+elrond.put(table, paper)
+elrond.put(table, pony)
+elrond.put(table, box)
+elrond.put(table, paper)
 
-//majdi.put(table, paper) // 11eme cadeau
+elrond.put(table, paper) // 11eme Gift => Error
 
-//majdi.look(table)
+elrond.look(table)
 
 conveyor.in()
-conveyor.in()
-conveyor.in()
+console.log(conveyor)
+conveyor.out()
+console.log(conveyor)

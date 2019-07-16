@@ -22,9 +22,8 @@ export default class ConveyorBelt extends Furniture {
   in() {
 
     let newGift
-    let nb = this.getRandomInt(3)
-    console.log(nb)
-    switch(nb) {
+    let nbRandom = this.getRandomInt(3)
+    switch(nbRandom) {
       case 0 :
          newGift = new DragonBall()
          break;
@@ -35,13 +34,18 @@ export default class ConveyorBelt extends Furniture {
         newGift = new Pony()
         break;
       default:
-        console.log('pas d idée')
-    }
+        console.log('Surprise')
 
+    this.isBusy = true;
+    this.item = newGift;
+    return newGift
+
+    }
   }
 
   out() {
-
+    this.isBusy = false;
+    this.item = "";
   }
 
   getRandomInt(max) {

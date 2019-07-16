@@ -1,5 +1,4 @@
 
-
 <p align="center">
   <img src="./assets/efrei-klaus-logo.png"/>
 </p>
@@ -81,7 +80,7 @@ Quand un `Pony` est bougé il affiche `Huuuuuuhu!`
 ### Dragon Ball
 
 Une figurine `DragonBall` possède un attribut privé `_character` de type Enum `DBHeroes`
-définit comme suit:
+définit comme suit :
 
 ```swift
 enum DBHeroes {
@@ -93,7 +92,7 @@ enum DBHeroes {
 ```
 
 Pour instancier une figurine `DragonBall`, il faut spécifier le personnage via l'enum et ainsi
-s'affiche sur la sortie standard:
+s'affiche sur la sortie standard :
 
 ```sh
 X is singing -->
@@ -113,7 +112,7 @@ Quand un `DragonBall` est bougé il affiche `Kamé Hamé Ha!`
 
 ### TEST
 
-Voici les fichiers que vous devriez avoir:
+Voici les fichiers que vous devriez avoir :
 
 ```sh
 ~/M/cdiwm-rush-efrei-klaus ❯❯❯ tree .
@@ -161,7 +160,7 @@ Kamé Hamé Ha!
 
 ## Etape \#2. Une histoire d'emballage
 
-Il faut maintenant être capable de gérer l'emballage des cadeaux:
+Il faut maintenant être capable de gérer l'emballage des cadeaux :
 
 #### Préparation
 
@@ -212,7 +211,7 @@ paramètre un `Packaging` et un `Toy`
 Si l'emballage est fermé, l'elf dit: `Sorry this package is not open`
 Si l'emballage possède déjà un cadeau, l'elf dit: `Sorry this package already filled`
 
-Sinon, le cadeau est ajouté à l'emballage et l'elf dit:
+Sinon, le cadeau est ajouté à l'emballage et l'elf dit :
 `Yeaaaah! Just packing the toy ~~ X ~~`
 
 > Remplacé X par le type du jouet
@@ -227,10 +226,10 @@ Comment faire pour que le changement effectué au sein de la méthode soit "rée
 Un elf peut déballer un cadeau via une méthode `unpack` qui prend en paramètre un
 `Packaging`
 
-Si l'emballage est ouvert ou qu'il n'y a pas de cadeau, l'elf dit:
+Si l'emballage est ouvert ou qu'il n'y a pas de cadeau, l'elf dit :
 `Sorry this package is already empty`
 
-Sinon, le cadeau est enlevé de l'emballage et l'elf dit:
+Sinon, le cadeau est enlevé de l'emballage et l'elf dit :
 `Ooooooh! Just unpacking the toy ~~ X ~~`
 
 Le jouet à l'intérieur de l'emballage est retourné
@@ -258,7 +257,7 @@ Voici les fichiers que vous devriez avoir:
 0 directories, 10 files
 ```
 
-Voici un main suivi de la sortie que vous devriez avoir:
+Voici un main suivi de la sortie que vous devriez avoir :
 
 ```swift
 ...
@@ -336,7 +335,7 @@ tapis roulant ou envoie ce qu'il y a actuellement sur le tapis au père Noël en
 
 Un emballage envoyé au père Noël est considéré comme perdu, le tapis roulant est de nouveau libre.
 
-L'elfe peut regarder via la méthode `look` sur la table pour savoir ce qu'il s'y trouve;
+L'elfe peut regarder via la méthode `look` sur la table pour savoir ce qu'il s'y trouve.
 Il obtient un tableau avec les intitulés des différents Objets.
 
 ```sh
@@ -347,7 +346,7 @@ L'elfe peut également regarder sur le tapis roulant pour savoir ce qu'il s'y tr
 
 ### TEST
 
-Voici les fichiers que vous devriez avoir:
+Voici les fichiers que vous devriez avoir :
 
 ```sh
 ~/M/cdiwm-rush-efrei-klaus ❯❯❯ tree .
@@ -370,7 +369,7 @@ Voici les fichiers que vous devriez avoir:
 0 directories, 14 files
 ```
 
-Voici un main suivi de la sortie que vous devriez avoir:
+Voici un main suivi de la sortie que vous devriez avoir :
 
 ```swift
 ...
@@ -393,7 +392,7 @@ SK vous demande d'écrire les protocoles `PTable` et `PTapisRoulant` ainsi que l
 La table et le tapis roulant du père Noël contiennent ce qu'il faut pour faire 2 cadeaux.
 
 La disposition/répartition des emballages/jouets entre le tapis et la table est à votre convenance.
-SK veut que vous lui fournissiez deux méthodes:
+SK veut que vous lui fournissiez deux méthodes :
 
 ```swift
 makeTable() -> PTable
@@ -433,7 +432,7 @@ Voici les fichiers que vous devriez avoir:
 
 ### Le final
 
-Vous DEVEZ imaginer et implémenter un moyen de faire communiquer la table et le tapis roulant avec ceux de l'un de vos camarade 😱<br />
+Vous DEVEZ imaginer et implémenter un moyen de faire communiquer la table et le tapis roulant avec ceux de l'un de vos camarades 😱<br />
 Pour cela vous devez utiliser des chaussettes magiques.
 
 > Le travail doit être fait en binôme, choose well
@@ -442,4 +441,4 @@ Pour cela vous devez utiliser des chaussettes magiques.
 
 ### Le typage say bien
 
-Tout simplement refaire le projet en TypeScript ou un autre si déjà fait ;p
+Tout simplement refaire le projet en TypeScript ou un autre si déjà fait ;)
