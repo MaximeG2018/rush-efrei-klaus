@@ -23,6 +23,6 @@ Sawagu Genki-Dama --Sparking !
   }
 
   isMoved() {
-    console.log('Kamé Hamé Ha!')
+    super.isMoved()
   }
 }
